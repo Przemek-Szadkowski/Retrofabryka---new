@@ -1,0 +1,107 @@
+//sekcja o nas
+
+section.we {
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    div.description {
+        height: 100vh;
+
+        h1 {
+            color: white;
+            font-size: 1.6rem;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 20px;
+        }
+
+        p {
+            font-size: 1rem;
+            background-color: rgba(255, 255, 255, .25);
+            border-radius: 25px;
+            margin: 0 20px 20px 20px;
+            padding: 10px;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+    }
+
+    div.portraites {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .photo {
+            width: 100%;
+        }
+
+        img {
+            display: block;
+            padding: 10px 80px 10px 80px;
+            width: 100%;
+        }
+
+        p {
+            font-size: 1rem;
+            margin: 10px 0;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+    }
+}
+
+@media (orientation: landscape) {
+    section.we {
+        height: 160vh;
+
+        div.description {
+            height: 100vh;
+
+            h1 {
+                color: white;
+                font-size: 1.6rem;
+                text-align: center;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                padding: 20px;
+            }
+
+            p {
+                font-size: 1rem;
+                background-color: rgba(255, 255, 255, .25);
+                border-radius: 25px;
+                margin: 0 20px 20px 20px;
+                padding: 10px;
+                text-align: center;
+                letter-spacing: 1px;
+            }
+        }
+
+        div.portraites {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            .photo {
+                width: 100%;
+            }
+
+            img {
+                padding: 0 0;
+                width: 60%;
+                margin: 0 auto;
+            }
+
+            p {
+                font-size: 1rem;
+                margin: 10px 0;
+                text-align: center;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}

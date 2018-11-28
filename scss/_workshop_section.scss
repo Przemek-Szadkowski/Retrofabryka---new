@@ -1,0 +1,54 @@
+//sekcja warsztatu
+
+section.workshop {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/warsztat.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    background-attachment: fixed;
+
+    div.workshop_wrapper {
+
+        background-color: rgba(0, 0, 0, .7);
+        height: 100vh;
+
+        h1 {
+            color: white;
+            font-size: 1.6rem;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding-top: 20px;
+        }
+
+        h2 {
+            padding: 20px 10px 20px 10px;
+            color: white;
+            font-size: 1.1rem;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 1rem;
+            background-color: rgba(255, 255, 255, .25);
+            border-radius: 25px;
+            margin: 0 20px 0 20px;
+            padding: 10px;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+    }
+}
+
+@media (orientation: landscape) {
+    section.workshop {
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: 150%;
+        background-position: right;
+        background-attachment: fixed;
+    }
+}

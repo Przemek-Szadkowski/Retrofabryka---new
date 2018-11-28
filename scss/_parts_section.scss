@@ -1,0 +1,78 @@
+//sekcja części
+
+section.parts {
+    height: 130vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+    div.column_left {
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+
+        .part {
+            display: block;
+            width: 90%;
+            height: 50%;
+            margin: 5px auto;
+        }
+
+        .second {
+            display: none;
+        }
+
+        .third {
+            display: none;
+        }
+    }
+
+    div.column_right {
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h1 {
+            color: white;
+            font-size: 1.6rem;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding-top: 20px;
+        }
+
+        h2 {
+            padding: 20px 10px 20px 10px;
+            color: white;
+            font-size: 1.1rem;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 1rem;
+            background-color: rgba(255, 255, 255, .25);
+            border-radius: 25px;
+            margin: 0 20px 0 20px;
+            padding: 10px;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+    }
+}
+
+@media (orientation: landscape) {
+    section.parts {
+        height: auto;
+
+        div.column_right {
+            h2 {
+                padding: 20px 30px 20px 30px;
+            }
+        }
+    }
+}

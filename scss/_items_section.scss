@@ -1,0 +1,30 @@
+//sekcja przedmiotów
+
+section.items {
+    height: 100vh;
+    width: 100%;
+
+    h1 {
+        color: white;
+        font-size: 1.6rem;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding-top: 20px;
+    }
+
+    h2 {
+        padding: 20px 10px 20px 10px;
+        color: white;
+        font-size: 1.1rem;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+
+@media (orientation: landscape) {
+    section.items {
+        height: 100vh;
+        width: 100%;
+    }
+}
