@@ -1,7 +1,7 @@
 //sekcja części
 
 section.parts {
-    height: 130vh;
+    height: 135vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -10,14 +10,14 @@ section.parts {
     margin-bottom: 2%;
 
     div.column_left {
-        flex-basis: 50%;
+        flex-basis: 35vh;
         display: flex;
         flex-direction: column;
 
         .part {
             display: block;
             width: 90%;
-            height: 50%;
+            height: 15vh;
             margin: 5px auto;
         }
 
@@ -31,7 +31,7 @@ section.parts {
     }
 
     div.column_right {
-        flex-basis: 50%;
+        flex-basis: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -67,9 +67,19 @@ section.parts {
 
 @media (orientation: landscape) {
     section.parts {
-        height: auto;
+        height: 180vh;
+
+        div.column_left {
+            flex-basis: 35vh;
+
+            .part {
+                height: 25vh;
+            }
+        }
 
         div.column_right {
+            flex-basis: 145vh;
+
             h2 {
                 padding: 20px 30px 20px 30px;
             }

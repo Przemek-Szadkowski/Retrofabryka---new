@@ -205,7 +205,7 @@ header nav a:hover {
 }
 
 section.bikes {
-  height: 220vh;
+  height: 240vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -250,8 +250,8 @@ section.bikes div.slogan p {
 }
 
 section.bikes div.bicycles {
-  -ms-flex-preferred-size: 100vh;
-      flex-basis: 100vh;
+  -ms-flex-preferred-size: 140vh;
+      flex-basis: 140vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -287,7 +287,15 @@ section.bikes div.bicycles .bicycle:hover {
 
 @media (orientation: landscape) {
   section.bikes {
-    height: 350vh;
+    height: 360vh;
+  }
+  section.bikes div.slogan {
+    -ms-flex-preferred-size: 120vh;
+        flex-basis: 120vh;
+  }
+  section.bikes div.bicycles {
+    -ms-flex-preferred-size: 240vh;
+        flex-basis: 240vh;
   }
   section.bikes div.bicycles p {
     width: 100%;
@@ -348,7 +356,7 @@ section.workshop div.workshop_wrapper p {
 }
 
 section.parts {
-  height: 130vh;
+  height: 135vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -365,8 +373,8 @@ section.parts {
 }
 
 section.parts div.column_left {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  -ms-flex-preferred-size: 35vh;
+      flex-basis: 35vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -379,7 +387,7 @@ section.parts div.column_left {
 section.parts div.column_left .part {
   display: block;
   width: 90%;
-  height: 50%;
+  height: 15vh;
   margin: 5px auto;
 }
 
@@ -392,8 +400,8 @@ section.parts div.column_left .third {
 }
 
 section.parts div.column_right {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  -ms-flex-preferred-size: 100vh;
+      flex-basis: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -435,7 +443,18 @@ section.parts div.column_right p {
 
 @media (orientation: landscape) {
   section.parts {
-    height: auto;
+    height: 180vh;
+  }
+  section.parts div.column_left {
+    -ms-flex-preferred-size: 35vh;
+        flex-basis: 35vh;
+  }
+  section.parts div.column_left .part {
+    height: 25vh;
+  }
+  section.parts div.column_right {
+    -ms-flex-preferred-size: 145vh;
+        flex-basis: 145vh;
   }
   section.parts div.column_right h2 {
     padding: 20px 30px 20px 30px;
@@ -472,7 +491,7 @@ section.items h2 {
 }
 
 section.we {
-  height: 200vh;
+  height: 225vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
