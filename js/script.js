@@ -67,3 +67,40 @@ $(".fa-angle-double-up").on("click", function () {
         scrollTop: $("#main_title").offset().top,
     }, 1000)
 })
+
+// functions
+
+function showPhotos() {
+    const scrollPosition = window.scrollY;
+    const photoHeight = document.querySelector(".photo").clientHeight;
+    const photoPosition = document.querySelector(".photo").offsetTop;
+    const items = document.querySelectorAll(".photo");
+
+    items.forEach(function (item) {
+        if (scrollPosition + 100 > photoPosition - photoHeight) {
+            item.classList.remove("off");
+        }
+        if ((scrollPosition + 200) < photoPosition - photoHeight) {
+            item.classList.add("off");
+        }
+    })
+}
+
+function movePhotos() {
+    const scrollPosition = window.scrollY;
+    const partsHeight = document.querySelector(".part").clientHeight;
+    const partsPosition = document.querySelector(".part").offsetTop;
+    const items = document.querySelectorAll(".part");
+
+    items.forEach(function (item) {
+        if (scrollPosition + 200 > partsPosition - partsHeight) {
+            item.classList.add("active");
+        }
+        if (scrollPosition + 600 < partsPosition - partsHeight) {
+            item.classList.remove("active");
+        }
+    })
+}
+
+window.addEventListener("scroll", showPhotos);
+window.addEventListener("scroll", movePhotos);

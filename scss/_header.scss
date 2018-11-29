@@ -4,7 +4,7 @@ header {
     position: relative;
     height: 100vh;
     width: 100%;
-    background-image: url(../img/zebatka_1024.png);
+    background-image: url(../img/zebatka_320.png);
     background-size: 80vh;
     background-repeat: no-repeat;
     background-position: 180% 0%;
@@ -43,8 +43,8 @@ header {
 
     div i {
         position: fixed;
-        top: 5%;
-        right: 5%;
+        top: 4%;
+        right: 4%;
         z-index: 1;
         font-size: 2.5rem;
         color: #f26202;
@@ -148,6 +148,12 @@ header {
 
 }
 
+@media (orientation: portrait) {
+    header {
+        background-position: 110% 0%;
+    }
+}
+
 @media (orientation: landscape) {
     header {
         background-size: contain;
@@ -166,6 +172,28 @@ header {
                 right: 5%;
                 height: 35vh;
             }
+        }
+    }
+}
+
+@media (min-width: 600px) {
+    header {
+        background-image: url(../img/zebatka_768.png);
+
+        div i {
+            top: 5%;
+            right: 4%;
+        }
+    }
+}
+
+@media (min-width: 800px) {
+    header {
+        background-image: url(../img/zebatka_1024.png);
+
+        div i {
+            top: 5%;
+            right: 3%;
         }
     }
 }

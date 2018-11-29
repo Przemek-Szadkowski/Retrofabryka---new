@@ -52,3 +52,70 @@ section.workshop {
         background-attachment: fixed;
     }
 }
+
+@media (min-width: 600px) and (orientation: landscape) {
+    section.workshop {
+        height: 80vh;
+    }
+}
+
+@media (min-width: 340px) and (min-height: 500px) {
+    section.workshop {
+        height: 80vh;
+    }
+}
+
+@media (min-width: 340px) and (min-height: 650px) {
+    section.workshop {
+        height: 50vh;
+    }
+}
+
+@media (min-width: 700px) {
+    section.workshop {
+        height: 70vh;
+    }
+}
+
+@media (min-width: 740px) {
+    section.workshop {
+        height: 100vh;
+        background-size: contain;
+        background-position: right;
+
+        div.workshop_wrapper {
+            position: relative;
+            width: 50%;
+            height: 40vh;
+            background-color: transparent;
+
+            h1 {
+                position: absolute;
+                top: 20%;
+                left: 0%;
+                width: 100%;
+                font-size: 3rem;
+                margin: 0 auto;
+            }
+
+            h2 {
+                position: absolute;
+                top: 40%;
+                left: 0%;
+                width: 100%;
+                font-size: 2rem;
+                margin: 20px auto;
+                padding: 20px;
+            }
+
+            p {
+                position: absolute;
+                top: 100%;
+                left: 0%;
+                font-size: 1.4rem;
+                margin: 0 20px;
+                width: 90%;
+            }
+        }
+    }
+}

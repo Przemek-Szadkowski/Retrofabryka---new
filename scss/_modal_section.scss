@@ -11,19 +11,25 @@ section.modal_wrapper.active {
 
 section.modal_wrapper {
 
-    position: relative;
-
     div i {
-        display: none;
+        transition: .5s;
+        transform: scale(0);
 
         &.on {
             display: block;
             font-size: 2rem;
             position: fixed;
             z-index: 1;
-            top: 40px;
-            left: 35px;
+            top: 8px;
+            left: 8px;
             cursor: pointer;
+            color: white;
+            background-color: #f26202;
+            border: 10px solid #f26202;
+            box-shadow: 0 0 0 2px black;
+            border-radius: 60%;
+            transition: .5s;
+            transform: scale(1);
 
             &:hover {
                 color: #444;
@@ -126,7 +132,20 @@ section.modal_wrapper {
         div i {
 
             &.on {
-                left: 50px;
+                left: 10px;
+            }
+        }
+    }
+}
+
+@media (min-width: 800px) {
+    section.modal_wrapper {
+
+        div i {
+
+            &.on {
+                top: 5%;
+                left: 5%;
             }
         }
     }

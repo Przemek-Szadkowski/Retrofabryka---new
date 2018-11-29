@@ -50,6 +50,7 @@ section.we {
             margin: 10px 0;
             text-align: center;
             letter-spacing: 1px;
+            text-transform: uppercase;
         }
     }
 }
@@ -101,6 +102,96 @@ section.we {
                 margin: 10px 0;
                 text-align: center;
                 letter-spacing: 1px;
+            }
+        }
+    }
+}
+
+@media (min-width: 500px) and (orientation: landscape) {
+    section.we {
+        height: 140vh;
+
+        div.description {
+            height: 80vh;
+        }
+    }
+}
+
+@media (min-width: 600px) and (orientation: landscape) {
+    section.we {
+        height: 120vh;
+
+        div.description {
+            height: 70vh;
+        }
+    }
+}
+
+
+@media (min-width: 340px) and (min-height: 500px) {
+    section.we {
+        height: 190vh;
+
+        div.description {
+            height: 60vh;
+        }
+
+        div.portraites {
+            height: 130vh;
+        }
+    }
+}
+
+@media (min-width: 340px) and (min-height: 650px) {
+    section.we {
+        height: 170vh;
+
+        div.portraites {
+            height: 120vh;
+        }
+    }
+}
+
+@media (min-width: 700px) {
+    section.we {
+        height: 100vh;
+
+        div.description {
+            height: 60vh;
+        }
+
+        div.photo {
+            transform: scale(1);
+            transition: 1s;
+
+            &.off {
+                transform: scale(0);
+            }
+        }
+    }
+}
+
+@media (min-width: 740px) {
+    section.we {
+        height: 110vh;
+
+        div.description {
+            height: 50vh;
+
+            h1 {
+                font-size: 3rem;
+            }
+
+            p {
+                font-size: 1.4rem;
+            }
+        }
+
+        div.portraites {
+            height: 60vh;
+
+            p {
+                font-size: 2rem;
             }
         }
     }
