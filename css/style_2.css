@@ -472,4 +472,9 @@ section.modal_wrapper i.on:hover {
         max-width: 80%;
         max-height: auto;
     }
+
+    header div i {
+        top: 5%;
+        right: 3%;
+    }
 }
