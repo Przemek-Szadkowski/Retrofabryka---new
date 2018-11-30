@@ -143,12 +143,44 @@ section.bikes {
     }
 }
 
+// @media (min-width: 700px) {
+//     section.bikes {
+//         height: 310vh;
+
+//         div.slogan {
+//             flex-basis: 60vh;
+
+//             h1 {
+//                 font-size: 3rem;
+//             }
+
+//             h2 {
+//                 font-size: 2rem;
+//             }
+
+//             p {
+//                 font-size: 1.4rem;
+//                 margin: 0 40px;
+//             }
+//         }
+
+//         div.bicycles {
+//             flex-basis: 250vh;
+
+//             p.orange {
+//                 font-size: 1.5rem;
+//                 margin-bottom: 30px;
+//             }
+//         }
+//     }
+// }
+
 @media (min-width: 700px) {
     section.bikes {
-        height: 310vh;
+        height: 195vh;
 
         div.slogan {
-            flex-basis: 60vh;
+            flex-basis: 55vh;
 
             h1 {
                 font-size: 3rem;
@@ -165,30 +197,16 @@ section.bikes {
         }
 
         div.bicycles {
-            flex-basis: 250vh;
+            flex-basis: 140vh;
 
             p.orange {
                 font-size: 1.5rem;
                 margin-bottom: 30px;
             }
-        }
-    }
-}
-
-@media (min-width: 740px) {
-    section.bikes {
-        height: 200vh;
-
-        div.slogan {
-            flex-basis: 60vh;
-        }
-
-        div.bicycles {
-            flex-basis: 140vh;
 
             .bicycle {
                 max-height: 45vh;
-                max-width: 30vw;
+                max-width: 27vw;
             }
         }
     }
