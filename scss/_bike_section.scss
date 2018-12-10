@@ -1,18 +1,21 @@
 //sekcja rowerowa
 
 section.bikes {
-    height: 240vh;
+    height: 170vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
 
     div.slogan {
-        flex-basis: 100vh;
+        flex-basis: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
 
         h1 {
             color: white;
-            font-size: 1.6rem;
+            font-size: 2.6rem;
             text-align: center;
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -22,13 +25,13 @@ section.bikes {
         h2 {
             padding: 20px 10px 20px 10px;
             color: white;
-            font-size: 1.1rem;
+            font-size: 2rem;
             text-align: center;
             text-transform: uppercase;
         }
 
         p {
-            font-size: 1rem;
+            font-size: 1.2rem;
             background-color: rgba(255, 255, 255, .2);
             border-radius: 25px;
             margin: 0 20px 0 20px;
@@ -37,177 +40,159 @@ section.bikes {
             letter-spacing: 1px;
         }
 
+        p+p {
+            background-color: transparent;
+            margin-bottom: 10px;
+        }
+
     }
 
     div.bicycles {
-        flex-basis: 140vh;
+        flex-basis: 110vh;
         display: flex;
         justify-content: space-around;
-        align-content: space-around;
+        align-content: center;
         flex-wrap: wrap;
 
-        p {
-            font-size: .8rem;
-        }
+        a {
 
-        .bicycle {
-            display: block;
-            max-height: 45vh;
-            max-width: 45vw;
-            padding: 5px 0;
-            transform: scale(1);
-            transition: .3s;
+            .bicycle {
+                display: block;
+                max-height: 35vh;
+                width: auto;
+                padding: 5px 0;
+                transform: scale(1);
+                transition: .3s;
 
-            &:hover {
-                transform: scale(1.02);
-                cursor: pointer;
+                &:hover {
+                    transform: scale(1.02);
+                    cursor: pointer;
+                }
             }
         }
     }
 }
 
-@media (min-width: 320px) {
+@media (max-width: 1120px) {
     section.bikes {
-        height: 220vh;
+        div.slogan {
+            h1 {
+                font-size: 2.2rem;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 1035px) {
+    section.bikes {
+        height: 150vh;
+
+        div.slogan {
+            flex-basis: 55vh;
+        }
+
+        div.bicycles {
+            flex-basis: 95vh;
+
+            a {
+                .bicycle {
+                    height: 28vh;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 840px) {
+    section.bikes {
+        height: 135vh;
+
+        div.slogan {
+            flex-basis: 55vh;
+
+            h2 {
+                font-size: 1.4rem;
+            }
+        }
+
+        div.bicycles {
+            flex-basis: 80vh;
+
+            a {
+                .bicycle {
+                    height: 25vh;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 690px) {
+    section.bikes {
+        height: 130vh;
+
+        div.bicycles {
+            flex-basis: 75vh;
+
+            a {
+                .bicycle {
+                    height: 20vh;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 540px) {
+    section.bikes {
+        height: 130vh;
+
+        div.bicycles {
+            flex-basis: 75vh;
+
+            a {
+                .bicycle {
+                    height: 15vh;
+                }
+            }
+        }
+    }
+}
+
+@media (orientation: portrait) {
+    section.bikes {
+        height: 130vh;
 
         div.slogan {
             flex-basis: 60vh;
         }
 
         div.bicycles {
-            flex-basis: 140vh;
-        }
-    }
-}
+            flex-basis: 70vh;
 
-@media (min-width: 320px) and (orientation: landscape) {
-    section.bikes {
-        height: 360vh;
-
-        div.slogan {
-            flex-basis: 120vh;
-        }
-
-        div.bicycles {
-            flex-basis: 240vh;
-
-            p {
-                width: 100%;
-                text-align: center;
+            a {
+                .bicycle {
+                    max-height: 20vh;
+                }
             }
         }
     }
 }
 
-
-@media (min-width: 500px) and (orientation: landscape) {
+@media (orientation: portrait) and (max-width: 410px) {
     section.bikes {
-        height: 340vh;
-
-        div.slogan {
-            flex-basis: 100vh;
-        }
-
-        div.bicycles {
-            flex-basis: 240vh;
-
-            p {
-                width: 100%;
-                text-align: center;
-            }
-        }
-    }
-}
-
-@media (min-width: 540px) and (orientation: landscape) {
-    section.bikes {
-        height: 340vh;
-
-        div.slogan {
-            flex-basis: 80vh;
-        }
-
-        div.bicycles {
-            flex-basis: 260vh;
-        }
-    }
-}
-
-@media (min-width: 340px) and (min-height: 650px) {
-    section.bikes {
-        height: 160vh;
+        height: 175vh;
 
         div.bicycles {
             flex-basis: 120vh;
-        }
-    }
-}
-
-// @media (min-width: 700px) {
-//     section.bikes {
-//         height: 310vh;
-
-//         div.slogan {
-//             flex-basis: 60vh;
-
-//             h1 {
-//                 font-size: 3rem;
-//             }
-
-//             h2 {
-//                 font-size: 2rem;
-//             }
-
-//             p {
-//                 font-size: 1.4rem;
-//                 margin: 0 40px;
-//             }
-//         }
-
-//         div.bicycles {
-//             flex-basis: 250vh;
-
-//             p.orange {
-//                 font-size: 1.5rem;
-//                 margin-bottom: 30px;
-//             }
-//         }
-//     }
-// }
-
-@media (min-width: 700px) {
-    section.bikes {
-        height: 195vh;
-
-        div.slogan {
-            flex-basis: 55vh;
-
-            h1 {
-                font-size: 3rem;
-            }
-
-            h2 {
-                font-size: 2rem;
-            }
-
-            p {
-                font-size: 1.4rem;
-                margin: 0 40px;
-            }
-        }
-
-        div.bicycles {
-            flex-basis: 140vh;
-
-            p.orange {
-                font-size: 1.5rem;
-                margin-bottom: 30px;
-            }
-
-            .bicycle {
-                max-height: 45vh;
-                max-width: 27vw;
-            }
         }
     }
 }

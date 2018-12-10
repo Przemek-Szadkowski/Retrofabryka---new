@@ -148,12 +148,6 @@ header {
 
 }
 
-@media (orientation: portrait) {
-    header {
-        background-position: 110% 0%;
-    }
-}
-
 @media (orientation: landscape) {
     header {
         background-size: contain;
@@ -195,5 +189,11 @@ header {
             top: 5%;
             right: 3%;
         }
+    }
+}
+
+@media (orientation: portrait) {
+    header {
+        background-position: 110% 0%;
     }
 }
