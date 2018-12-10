@@ -1,14 +1,15 @@
 //sekcja rowerowa
 
 section.bikes {
-    height: 170vh;
+    height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-bottom: 10px;
 
     div.slogan {
-        flex-basis: 60vh;
+        flex-basis: auto;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -48,18 +49,19 @@ section.bikes {
     }
 
     div.bicycles {
-        flex-basis: 110vh;
+        flex-basis: auto;
         display: flex;
         justify-content: space-around;
         align-content: center;
         flex-wrap: wrap;
+        width: 100%;
 
         a {
 
             .bicycle {
                 display: block;
                 max-height: 35vh;
-                width: auto;
+                max-width: 32vw;
                 padding: 5px 0;
                 transform: scale(1);
                 transition: .3s;
@@ -93,18 +95,20 @@ section.bikes {
 
 @media (max-width: 1035px) {
     section.bikes {
-        height: 150vh;
+        height: auto;
 
         div.slogan {
-            flex-basis: 55vh;
+            flex-basis: auto;
         }
 
         div.bicycles {
-            flex-basis: 95vh;
+            flex-basis: auto;
+            max-width: 90vw;
 
             a {
                 .bicycle {
-                    height: 28vh;
+                    max-height: 30vh;
+                    max-width: 28vw;
                 }
             }
         }
@@ -113,10 +117,10 @@ section.bikes {
 
 @media (max-width: 840px) {
     section.bikes {
-        height: 135vh;
+        height: auto;
 
         div.slogan {
-            flex-basis: 55vh;
+            flex-basis: auto;
 
             h2 {
                 font-size: 1.4rem;
@@ -124,11 +128,12 @@ section.bikes {
         }
 
         div.bicycles {
-            flex-basis: 80vh;
+            flex-basis: auto;
 
             a {
                 .bicycle {
-                    height: 25vh;
+                    max-height: 33vh;
+                    max-width: 26vw;
                 }
             }
         }
@@ -137,14 +142,15 @@ section.bikes {
 
 @media (max-width: 690px) {
     section.bikes {
-        height: 130vh;
+        height: auto;
 
         div.bicycles {
-            flex-basis: 75vh;
+            flex-basis: auto;
 
             a {
                 .bicycle {
-                    height: 20vh;
+                    max-height: 30vh;
+                    max-width: 26vw;
                 }
             }
         }
@@ -153,14 +159,15 @@ section.bikes {
 
 @media (max-width: 540px) {
     section.bikes {
-        height: 130vh;
+        height: auto;
 
         div.bicycles {
-            flex-basis: 75vh;
+            flex-basis: auto;
 
             a {
                 .bicycle {
-                    height: 15vh;
+                    max-height: 26vh;
+                    max-width: 26vw;
                 }
             }
         }
@@ -169,30 +176,45 @@ section.bikes {
 
 @media (orientation: portrait) {
     section.bikes {
-        height: 130vh;
+        height: auto;
 
         div.slogan {
-            flex-basis: 60vh;
+            flex-basis: auto;
         }
 
         div.bicycles {
-            flex-basis: 70vh;
+            flex-basis: auto;
 
             a {
                 .bicycle {
-                    max-height: 20vh;
+                    max-height: 26vh;
+                    max-width: 26vw;
                 }
             }
         }
     }
 }
 
-@media (orientation: portrait) and (max-width: 410px) {
+@media (orientation: portrait) and (max-width: 390px) {
     section.bikes {
-        height: 175vh;
+        height: auto;
+
+        div.slogan {
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.4rem;
+            }
+
+            p {
+                font-size: .8rem;
+            }
+        }
 
         div.bicycles {
-            flex-basis: 120vh;
+            flex-basis: auto;
         }
     }
 }
