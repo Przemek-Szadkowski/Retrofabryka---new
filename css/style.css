@@ -442,7 +442,7 @@ section.bikes div.bicycles a .bicycle:hover {
 }
 
 section.workshop {
-  height: 100vh;
+  height: auto;
   width: 100%;
   background-image: url(../img/warsztat.png);
   background-repeat: no-repeat;
@@ -452,13 +452,25 @@ section.workshop {
 }
 
 section.workshop div.workshop_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   background-color: rgba(0, 0, 0, 0.7);
-  height: 100vh;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 section.workshop div.workshop_wrapper h1 {
   color: white;
-  font-size: 1.6rem;
+  font-size: 2rem;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -468,13 +480,13 @@ section.workshop div.workshop_wrapper h1 {
 section.workshop div.workshop_wrapper h2 {
   padding: 20px 10px 20px 10px;
   color: white;
-  font-size: 1.1rem;
+  font-size: 1.6rem;
   text-align: center;
   text-transform: uppercase;
 }
 
 section.workshop div.workshop_wrapper p {
-  font-size: 1rem;
+  font-size: 1.4rem;
   background-color: rgba(255, 255, 255, 0.25);
   border-radius: 25px;
   margin: 0 20px 0 20px;
@@ -483,81 +495,37 @@ section.workshop div.workshop_wrapper p {
   letter-spacing: 1px;
 }
 
-@media (orientation: landscape) {
-  section.workshop {
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: 150%;
-    background-position: right;
-    background-attachment: fixed;
-  }
-}
-
-@media (min-width: 600px) and (orientation: landscape) {
-  section.workshop {
-    height: 80vh;
-  }
-}
-
-@media (min-width: 340px) and (min-height: 500px) {
-  section.workshop {
-    height: 80vh;
-  }
-}
-
-@media (min-width: 340px) and (min-height: 650px) {
-  section.workshop {
-    height: 50vh;
-  }
-}
-
-@media (min-width: 700px) {
-  section.workshop {
-    height: 70vh;
-  }
-}
-
-@media (min-width: 740px) {
-  section.workshop {
-    height: 100vh;
-    background-size: contain;
-    background-position: right;
-  }
-  section.workshop div.workshop_wrapper {
-    position: relative;
-    width: 50%;
-    height: 40vh;
-    background-color: transparent;
-  }
+@media (max-width: 1000px) {
   section.workshop div.workshop_wrapper h1 {
-    position: absolute;
-    top: 20%;
-    left: 0%;
-    width: 100%;
-    font-size: 3rem;
-    margin: 0 auto;
-  }
-  section.workshop div.workshop_wrapper h2 {
-    position: absolute;
-    top: 40%;
-    left: 0%;
-    width: 100%;
-    font-size: 2rem;
-    margin: 20px auto;
-    padding: 20px;
+    font-size: 2.6rem;
   }
   section.workshop div.workshop_wrapper p {
-    position: absolute;
-    top: 100%;
-    left: 0%;
-    font-size: 1.4rem;
-    margin: 0 20px;
-    width: 90%;
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 860px) {
+  section.workshop {
+    height: 100vh;
+  }
+  section.workshop div.workshop_wrapper {
+    height: 100vh;
+    width: 50%;
+    background-color: transparent;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section.workshop div.workshop_wrapper h1 {
+    font-size: 2.6rem;
+  }
+  section.workshop div.workshop_wrapper h2 {
+    font-size: 1.8rem;
   }
 }
 
 section.parts {
-  height: 135vh;
+  height: auto;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -574,8 +542,8 @@ section.parts {
 }
 
 section.parts div.column_left {
-  -ms-flex-preferred-size: 35vh;
-      flex-basis: 35vh;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -583,6 +551,10 @@ section.parts div.column_left {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 10px;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 
 section.parts div.column_left .part {
@@ -601,8 +573,8 @@ section.parts div.column_left .third {
 }
 
 section.parts div.column_right {
-  -ms-flex-preferred-size: 100vh;
-      flex-basis: 100vh;
+  -ms-flex-preferred-size: 1auto;
+      flex-basis: 1auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -642,58 +614,16 @@ section.parts div.column_right p {
   letter-spacing: 1px;
 }
 
-@media (orientation: landscape) {
-  section.parts {
-    height: 200vh;
-  }
-  section.parts div.column_left {
-    -ms-flex-preferred-size: 55vh;
-        flex-basis: 55vh;
-  }
+@media (min-width: 560px) and (max-width: 799px) {
   section.parts div.column_left .part {
-    height: 35vh;
-    width: 90%;
-  }
-  section.parts div.column_right {
-    -ms-flex-preferred-size: 145vh;
-        flex-basis: 145vh;
-  }
-  section.parts div.column_right h2 {
-    padding: 20px 30px 20px 30px;
+    width: 65%;
+    height: 25vh;
   }
 }
 
-@media (min-width: 340px) and (min-height: 500px) {
+@media (min-width: 800px) {
   section.parts {
-    height: 115vh;
-  }
-  section.parts div.column_left {
-    -ms-flex-preferred-size: 35vh;
-        flex-basis: 35vh;
-  }
-  section.parts div.column_right {
-    -ms-flex-preferred-size: 80vh;
-        flex-basis: 80vh;
-  }
-}
-
-@media (min-width: 340px) and (min-height: 650px) {
-  section.parts {
-    height: 85vh;
-  }
-  section.parts div.column_left {
-    -ms-flex-preferred-size: 35vh;
-        flex-basis: 35vh;
-  }
-  section.parts div.column_right {
-    -ms-flex-preferred-size: 50vh;
-        flex-basis: 50vh;
-  }
-}
-
-@media (min-width: 700px) {
-  section.parts {
-    height: 100vh;
+    height: auto;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -704,13 +634,16 @@ section.parts div.column_right p {
             flex-direction: row;
   }
   section.parts div.column_left {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-    height: 100vh;
+    -ms-flex-preferred-size: 55%;
+        flex-basis: 55%;
+    height: auto;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
   }
   section.parts div.column_left .part {
     width: 100%;
-    height: 25vh;
+    height: 20vh;
     -webkit-transform: translateX(-800px);
             transform: translateX(-800px);
     -webkit-transition: 1.2s;
@@ -735,9 +668,9 @@ section.parts div.column_right p {
             transform: translateX(0);
   }
   section.parts div.column_right {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-    height: 100vh;
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+    height: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -751,7 +684,7 @@ section.parts div.column_right p {
   }
   section.parts div.column_right h1 {
     color: white;
-    font-size: 1.6rem;
+    font-size: 2.6rem;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -760,13 +693,13 @@ section.parts div.column_right p {
   section.parts div.column_right h2 {
     padding: 20px 10px 20px 10px;
     color: white;
-    font-size: 1.1rem;
+    font-size: 1.8rem;
     text-align: center;
     text-transform: uppercase;
   }
   section.parts div.column_right p {
     display: block;
-    font-size: .9rem;
+    font-size: 1.1rem;
     background-color: rgba(255, 255, 255, 0.25);
     border-radius: 25px;
     margin: 0 auto;
@@ -774,18 +707,6 @@ section.parts div.column_right p {
     text-align: center;
     letter-spacing: 1px;
     width: 80%;
-  }
-}
-
-@media (min-width: 740px) {
-  section.parts div.column_right h1 {
-    font-size: 3rem;
-  }
-  section.parts div.column_right h2 {
-    font-size: 2rem;
-  }
-  section.parts div.column_right p {
-    font-size: 1.4rem;
   }
 }
 
@@ -828,7 +749,7 @@ section.items h2 {
 }
 
 section.we {
-  height: 225vh;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -842,7 +763,7 @@ section.we {
 }
 
 section.we div.description {
-  height: 100vh;
+  height: auto;
 }
 
 section.we div.description h1 {
@@ -862,19 +783,24 @@ section.we div.description p {
   padding: 10px;
   text-align: center;
   letter-spacing: 1px;
+  margin-bottom: 20px;
 }
 
 section.we div.portraites {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: auto;
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
+  margin-bottom: 20px;
 }
 
 section.we div.portraites .photo {
@@ -883,7 +809,7 @@ section.we div.portraites .photo {
 
 section.we div.portraites img {
   display: block;
-  padding: 10px 80px 10px 80px;
+  padding: 10px 40px 10px 40px;
   width: 100%;
 }
 
@@ -895,125 +821,21 @@ section.we div.portraites p {
   text-transform: uppercase;
 }
 
-@media (orientation: landscape) {
-  section.we {
-    height: 160vh;
-  }
-  section.we div.description {
-    height: 100vh;
-  }
-  section.we div.description h1 {
-    color: white;
-    font-size: 1.6rem;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    padding: 20px;
-  }
-  section.we div.description p {
-    font-size: 1rem;
-    background-color: rgba(255, 255, 255, 0.25);
-    border-radius: 25px;
-    margin: 0 20px 20px 20px;
-    padding: 10px;
-    text-align: center;
-    letter-spacing: 1px;
-  }
-  section.we div.portraites {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  section.we div.portraites .photo {
-    width: 100%;
-  }
-  section.we div.portraites img {
-    padding: 0 0;
-    width: 60%;
-    margin: 0 auto;
-  }
-  section.we div.portraites p {
-    font-size: 1rem;
-    margin: 10px 0;
-    text-align: center;
-    letter-spacing: 1px;
-  }
-}
-
-@media (min-width: 500px) and (orientation: landscape) {
-  section.we {
-    height: 140vh;
-  }
-  section.we div.description {
-    height: 80vh;
-  }
-}
-
-@media (min-width: 600px) and (orientation: landscape) {
-  section.we {
-    height: 120vh;
-  }
-  section.we div.description {
-    height: 70vh;
-  }
-}
-
 @media (orientation: portrait) {
-  section.we {
-    height: 200vh;
-  }
-  section.we div.description {
-    height: 80vh;
-  }
   section.we div.portraites {
-    height: 120vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
-@media (min-width: 700px) {
-  section.we {
-    height: 100vh;
-  }
-  section.we div.description {
-    height: 60vh;
-  }
-  section.we div.photo {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-transition: 1s;
-    transition: 1s;
-  }
-  section.we div.photo.off {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-}
-
-@media (min-width: 740px) {
-  section.we {
-    height: 110vh;
-  }
-  section.we div.description {
-    height: 50vh;
-  }
+@media (min-width: 920px) {
   section.we div.description h1 {
-    font-size: 3rem;
+    font-size: 2.6rem;
   }
   section.we div.description p {
     font-size: 1.4rem;
-  }
-  section.we div.portraites {
-    height: 60vh;
-  }
-  section.we div.portraites p {
-    font-size: 2rem;
   }
 }
 
@@ -1024,7 +846,7 @@ section.we div.portraites p {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .banner h1 {
@@ -1042,28 +864,11 @@ section.we div.portraites p {
   width: 100%;
 }
 
-@media (orientation: landscape) {
-  .banner {
-    height: 100vh;
-    margin-top: 0;
-  }
-  .banner h1 {
-    width: 100%;
-  }
-}
-
-@media (min-width: 340px) and (min-height: 500px) {
-  .banner h1 {
-    width: 100%;
-    font-size: 1.2rem;
-  }
-}
-
 @media (min-width: 700px) {
   .banner h1 {
     line-height: 6rem;
-    font-size: 4rem;
-    bottom: 90%;
+    font-size: 3rem;
+    bottom: 85%;
     left: 0%;
   }
 }

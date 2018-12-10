@@ -1,13 +1,13 @@
 //sekcja o nas
 
 section.we {
-    height: 225vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
     div.description {
-        height: 100vh;
+        height: auto;
 
         h1 {
             color: white;
@@ -26,14 +26,18 @@ section.we {
             padding: 10px;
             text-align: center;
             letter-spacing: 1px;
+            margin-bottom: 20px;
         }
     }
 
     div.portraites {
 
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
+        height: auto;
+        flex-basis: 35%;
+        margin-bottom: 20px;
 
         .photo {
             width: 100%;
@@ -41,7 +45,7 @@ section.we {
 
         img {
             display: block;
-            padding: 10px 80px 10px 80px;
+            padding: 10px 40px 10px 40px;
             width: 100%;
         }
 
@@ -55,157 +59,23 @@ section.we {
     }
 }
 
-@media (orientation: landscape) {
-    section.we {
-        height: 160vh;
-
-        div.description {
-            height: 100vh;
-
-            h1 {
-                color: white;
-                font-size: 1.6rem;
-                text-align: center;
-                text-transform: uppercase;
-                letter-spacing: 1px;
-                padding: 20px;
-            }
-
-            p {
-                font-size: 1rem;
-                background-color: rgba(255, 255, 255, .25);
-                border-radius: 25px;
-                margin: 0 20px 20px 20px;
-                padding: 10px;
-                text-align: center;
-                letter-spacing: 1px;
-            }
-        }
-
-        div.portraites {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-
-            .photo {
-                width: 100%;
-            }
-
-            img {
-                padding: 0 0;
-                width: 60%;
-                margin: 0 auto;
-            }
-
-            p {
-                font-size: 1rem;
-                margin: 10px 0;
-                text-align: center;
-                letter-spacing: 1px;
-            }
-        }
-    }
-}
-
-@media (min-width: 500px) and (orientation: landscape) {
-    section.we {
-        height: 140vh;
-
-        div.description {
-            height: 80vh;
-        }
-    }
-}
-
-@media (min-width: 600px) and (orientation: landscape) {
-    section.we {
-        height: 120vh;
-
-        div.description {
-            height: 70vh;
-        }
-    }
-}
-
 @media (orientation: portrait) {
     section.we {
-        height: 200vh;
-
-        div.description {
-            height: 80vh;
-        }
-
         div.portraites {
-            height: 120vh;
+            flex-direction: column;
         }
     }
 }
 
-
-// @media (min-width: 340px) and (min-height: 500px) {
-//     section.we {
-//         height: 190vh;
-
-//         div.description {
-//             height: 60vh;
-//         }
-
-//         div.portraites {
-//             height: 130vh;
-//         }
-//     }
-// }
-
-// @media (min-width: 340px) and (min-height: 650px) {
-//     section.we {
-//         height: 170vh;
-
-//         div.portraites {
-//             height: 120vh;
-//         }
-//     }
-// }
-
-@media (min-width: 700px) {
+@media (min-width:920px) {
     section.we {
-        height: 100vh;
-
         div.description {
-            height: 60vh;
-        }
-
-        div.photo {
-            transform: scale(1);
-            transition: 1s;
-
-            &.off {
-                transform: scale(0);
-            }
-        }
-    }
-}
-
-@media (min-width: 740px) {
-    section.we {
-        height: 110vh;
-
-        div.description {
-            height: 50vh;
-
             h1 {
-                font-size: 3rem;
+                font-size: 2.6rem;
             }
 
             p {
                 font-size: 1.4rem;
-            }
-        }
-
-        div.portraites {
-            height: 60vh;
-
-            p {
-                font-size: 2rem;
             }
         }
     }

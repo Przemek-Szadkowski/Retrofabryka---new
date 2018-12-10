@@ -1,7 +1,7 @@
 //sekcja części
 
 section.parts {
-    height: 135vh;
+    height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -10,9 +10,11 @@ section.parts {
     margin-bottom: 2%;
 
     div.column_left {
-        flex-basis: 35vh;
+        flex-basis: auto;
         display: flex;
         flex-direction: column;
+        margin-top: 10px;
+        order: 1;
 
         .part {
             display: block;
@@ -31,7 +33,7 @@ section.parts {
     }
 
     div.column_right {
-        flex-basis: 100vh;
+        flex-basis: 1auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -65,98 +67,34 @@ section.parts {
     }
 }
 
-@media (orientation: landscape) {
+@media (min-width: 560px) and (max-width: 799px) {
     section.parts {
-        height: 200vh;
 
         div.column_left {
-            flex-basis: 55vh;
 
             .part {
-                height: 35vh;
-                width: 90%;
-            }
-        }
-
-        div.column_right {
-            flex-basis: 145vh;
-
-            h2 {
-                padding: 20px 30px 20px 30px;
+                width: 65%;
+                height: 25vh;
             }
         }
     }
 }
 
-// @media (min-width: 500px) and (orientation: landscape) {
-//     section.parts {
-//         div.column_left {
-//             flex-basis: 35vh;
-
-//             .part {
-//                 height: 35vh;
-//                 width: 90%;
-//             }
-//         }
-//     }
-// }
-
-// @media (min-width: 600px) and (orientation: landscape) {
-//     section.parts {
-//         height: 150vh;
-
-//         div.column_left {
-//             flex-basis: 35vh;
-//         }
-
-//         div.column_right {
-//             flex-basis: 115vh;
-//         }
-//     }
-// }
-
-@media (min-width: 340px) and (min-height: 500px) {
+@media (min-width: 800px) {
     section.parts {
-        height: 115vh;
-
-        div.column_left {
-            flex-basis: 35vh;
-        }
-
-        div.column_right {
-            flex-basis: 80vh;
-        }
-    }
-}
-
-@media (min-width: 340px) and (min-height: 650px) {
-    section.parts {
-        height: 85vh;
-
-        div.column_left {
-            flex-basis: 35vh;
-        }
-
-        div.column_right {
-            flex-basis: 50vh;
-        }
-    }
-}
-
-@media (min-width: 700px) {
-    section.parts {
-        height: 100vh;
+        height: auto;
         width: 100%;
         display: flex;
         flex-direction: row;
 
         div.column_left {
-            flex-basis: 50%;
-            height: 100vh;
+            flex-basis: 55%;
+            height: auto;
+            order: 0;
 
             .part {
                 width: 100%;
-                height: 25vh;
+                height: 20vh;
                 transform: translateX(-800px);
                 transition: 1.2s;
 
@@ -181,15 +119,15 @@ section.parts {
         }
 
         div.column_right {
-            flex-basis: 50%;
-            height: 100vh;
+            flex-basis: 45%;
+            height: auto;
             display: flex;
             flex-direction: column;
             justify-content: center;
 
             h1 {
                 color: white;
-                font-size: 1.6rem;
+                font-size: 2.6rem;
                 text-align: center;
                 text-transform: uppercase;
                 letter-spacing: 1px;
@@ -199,14 +137,14 @@ section.parts {
             h2 {
                 padding: 20px 10px 20px 10px;
                 color: white;
-                font-size: 1.1rem;
+                font-size: 1.8rem;
                 text-align: center;
                 text-transform: uppercase;
             }
 
             p {
                 display: block;
-                font-size: .9rem;
+                font-size: 1.1rem;
                 background-color: rgba(255, 255, 255, .25);
                 border-radius: 25px;
                 margin: 0 auto;
@@ -214,26 +152,6 @@ section.parts {
                 text-align: center;
                 letter-spacing: 1px;
                 width: 80%;
-            }
-        }
-    }
-}
-
-@media (min-width: 740px) {
-    section.parts {
-
-        div.column_right {
-
-            h1 {
-                font-size: 3rem;
-            }
-
-            h2 {
-                font-size: 2rem;
-            }
-
-            p {
-                font-size: 1.4rem;
             }
         }
     }
