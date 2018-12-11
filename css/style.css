@@ -427,10 +427,10 @@ section.bikes div.bicycles a .bicycle:hover {
     height: auto;
   }
   section.bikes div.slogan h1 {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
   section.bikes div.slogan h2 {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
   }
   section.bikes div.slogan p {
     font-size: 1rem;
@@ -511,7 +511,10 @@ section.workshop div.workshop_wrapper p {
 
 @media (max-width: 600px) {
   section.workshop div.workshop_wrapper h1 {
-    font-size: 2rem;
+    font-size: 1.6rem;
+  }
+  section.workshop div.workshop_wrapper h2 {
+    font-size: 1.1rem;
   }
   section.workshop div.workshop_wrapper p {
     font-size: 1rem;
