@@ -41,6 +41,12 @@ section.we {
 
         .photo {
             width: 100%;
+            transform: scale(1);
+            transition: 1s;
+        }
+
+        .photo.off {
+            transform: scale(0);
         }
 
         img {
@@ -76,6 +82,12 @@ section.we {
 
             p {
                 font-size: 1.4rem;
+            }
+        }
+
+        div.portraites {
+            img {
+                padding: 10px 60px 10px 60px;
             }
         }
     }

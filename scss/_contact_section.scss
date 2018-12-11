@@ -1,7 +1,7 @@
 //sekcja kontaktu
 
 .contact {
-    height: 140vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -65,7 +65,7 @@
     div.footer h2 {
         height: 50px;
         padding: 10px;
-        font-size: 1.2rem;
+        font-size: .8rem;
         background-color: #222;
         letter-spacing: 3px;
         text-align: center;
@@ -76,7 +76,6 @@
 
 @media (orientation: landscape) {
     .contact {
-        height: 230vh;
 
         div.top {
             h2 {
@@ -97,33 +96,8 @@
     }
 }
 
-@media (min-width: 600px) and (orientation: landscape) {
-    .contact {
-        height: 210vh;
-    }
-}
-
-@media (min-width: 340px) and (min-height: 500px) {
-    .contact {
-        height: 120vh;
-    }
-}
-
-@media (min-width: 340px) and (min-height: 650px) {
-    .contact {
-        height: 100vh;
-    }
-}
-
-@media (min-width: 700px) {
-    .contact {
-        height: 170vh;
-    }
-}
-
 @media (min-width: 740px) {
     .contact {
-        height: 170vh;
 
         div.top {
 
@@ -155,7 +129,7 @@
         }
 
         div.footer h2 {
-            font-size: 1.2rem;
+            font-size: .8rem;
             text-transform: uppercase;
         }
     }

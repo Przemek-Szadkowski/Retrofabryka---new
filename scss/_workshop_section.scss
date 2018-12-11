@@ -63,6 +63,22 @@ section.workshop {
     }
 }
 
+@media (max-width: 600px) {
+    section.workshop {
+
+        div.workshop_wrapper {
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
 @media (min-width: 860px) {
     section.workshop {
         height: 100vh;
