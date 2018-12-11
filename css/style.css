@@ -433,7 +433,8 @@ section.bikes div.bicycles a .bicycle:hover {
     font-size: 1.1rem;
   }
   section.bikes div.slogan p {
-    font-size: 1rem;
+    font-size: .9rem;
+    margin: 0 30px;
   }
   section.bikes div.bicycles {
     -ms-flex-preferred-size: auto;
@@ -517,7 +518,8 @@ section.workshop div.workshop_wrapper p {
     font-size: 1.1rem;
   }
   section.workshop div.workshop_wrapper p {
-    font-size: 1rem;
+    font-size: .9rem;
+    margin: 0 30px;
   }
 }
 
@@ -625,7 +627,8 @@ section.parts div.column_right h2 {
 }
 
 section.parts div.column_right p {
-  font-size: 1rem;
+  font-size: .9rem;
+  margin: 0 30px;
   background-color: rgba(255, 255, 255, 0.25);
   border-radius: 25px;
   margin: 0 20px 0 20px;
@@ -796,10 +799,10 @@ section.we div.description h1 {
 }
 
 section.we div.description p {
-  font-size: 1rem;
+  font-size: .9rem;
   background-color: rgba(255, 255, 255, 0.25);
   border-radius: 25px;
-  margin: 0 20px 0 20px;
+  margin: 0 30px;
   padding: 10px;
   text-align: center;
   letter-spacing: 1px;
