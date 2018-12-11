@@ -531,6 +531,9 @@ section.workshop div.workshop_wrapper p {
   section.workshop div.workshop_wrapper h2 {
     font-size: 1.8rem;
   }
+  section.workshop div.workshop_wrapper p {
+    font-size: 1.2rem;
+  }
 }
 
 section.parts {
@@ -708,7 +711,7 @@ section.parts div.column_right p {
   }
   section.parts div.column_right p {
     display: block;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     background-color: rgba(255, 255, 255, 0.25);
     border-radius: 25px;
     margin: 0 auto;
@@ -750,10 +753,10 @@ section.items h2 {
 
 @media (min-width: 740px) {
   section.items h1 {
-    font-size: 3rem;
+    font-size: 2.6rem;
   }
   section.items h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -853,7 +856,7 @@ section.we div.portraites p {
     font-size: 2.6rem;
   }
   section.we div.description p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   section.we div.portraites img {
     padding: 10px 60px 10px 60px;
@@ -1087,17 +1090,22 @@ section.modal_wrapper div.modal h2 {
   padding-bottom: 5px;
   text-align: center;
   margin-top: 10px;
+  color: #111;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 section.modal_wrapper div.modal h3 {
   font-size: 1rem;
   text-align: center;
+  color: #111;
+  font-weight: bold;
 }
 
 section.modal_wrapper div.modal h4 {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   padding-bottom: 5px;
-  color: white;
+  color: #111;
   font-weight: normal;
   text-transform: uppercase;
   text-align: center;
@@ -1109,7 +1117,7 @@ section.modal_wrapper div.modal .main_ol {
   list-style-position: outside;
   padding-bottom: 10px;
   padding-top: 20px;
-  font-size: .8rem;
+  font-size: 1rem;
 }
 
 section.modal_wrapper div.modal .main_ol a {
@@ -1119,6 +1127,7 @@ section.modal_wrapper div.modal .main_ol a {
   font-weight: normal;
   text-align: center;
   font-size: 1rem;
+  font-weight: bold;
 }
 
 section.modal_wrapper div.modal .main_ol a:hover {
@@ -1132,6 +1141,7 @@ section.modal_wrapper div.modal .main_ol ol {
 section.modal_wrapper div.modal .main_ol ol li {
   text-indent: 1.4rem;
   padding: 5px 0;
+  color: #111;
 }
 
 section.modal_wrapper div.modal li.main_li {
@@ -1140,6 +1150,7 @@ section.modal_wrapper div.modal li.main_li {
   padding: 2px 0;
   font-weight: normal;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 section.modal_wrapper div.modal li.main_li ul li {

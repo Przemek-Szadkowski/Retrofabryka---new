@@ -283,19 +283,22 @@ div.modal h2 {
     padding-bottom: 5px;
     text-align: center;
     margin-top: 10px;
-    color: white;
+    color: #111;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 div.modal h3 {
     font-size: 1rem;
     text-align: center;
-    color: white;
+    color: #111;
+    font-weight: bold;
 }
 
 div.modal h4 {
     font-size: 1.4rem;
     padding-bottom: 5px;
-    color: white;
+    color: #111;
     font-weight: normal;
     text-transform: uppercase;
     text-align: center;
@@ -307,7 +310,7 @@ div.modal .main_ol {
     list-style-position: outside;
     padding-bottom: 10px;
     padding-top: 20px;
-    font-size: .8rem;
+    font-size: 1rem;
 }
 
 div.modal .main_ol a {
@@ -317,6 +320,7 @@ div.modal .main_ol a {
     font-weight: normal;
     text-align: center;
     font-size: 1rem;
+    font-weight: bold;
 }
 
 div.modal .main_ol a:hover {
@@ -330,6 +334,7 @@ div.modal .main_ol ol {
 div.modal .main_ol ol li {
     text-indent: 1.4rem;
     padding: 5px 0;
+    color: #111;
 }
 
 div.modal li.main_li {
@@ -338,11 +343,12 @@ div.modal li.main_li {
     padding: 2px 0;
     font-weight: normal;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 div.modal ul li {
     list-style-type: disc;
-    font-size: .8rem;
+    font-size: 1rem;
     padding: 10px 0;
 }
 
