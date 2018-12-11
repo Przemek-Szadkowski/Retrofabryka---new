@@ -3,7 +3,7 @@
 section.workshop {
     height: auto;
     width: 100%;
-    background-image: url(../img/warsztat.png);
+    background-image: url(../img/warsztat_1024.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
@@ -49,6 +49,7 @@ section.workshop {
 
 @media (max-width: 1000px) {
     section.workshop {
+        background-image: url(../img/warsztat_800.png);
 
         div.workshop_wrapper {
 
@@ -58,6 +59,8 @@ section.workshop {
 
             p {
                 font-size: 1.2rem;
+                padding: 5px;
+                margin-bottom: 30px;
             }
         }
     }
