@@ -67,14 +67,22 @@ section.parts {
     }
 }
 
-@media (min-width: 560px) {
+@media (min-width: 580px) {
     section.parts {
-
         div.column_left {
-
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: center;
             .part {
-                width: 55%;
-                max-height: 28vh;
+                width: 45%;
+                max-height: 35vh;
+            }
+            .second {
+                display: block;
+            }
+    
+            .third {
+                display: block;
             }
         }
     }
