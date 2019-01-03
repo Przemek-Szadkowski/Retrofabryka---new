@@ -188,7 +188,10 @@ section.bikes {
             a {
                 .bicycle {
                     max-height: 26vh;
-                    max-width: 26vw;
+                    max-width: 36vw;
+                }
+                &:last-child {
+                    display: none;
                 }
             }
         }

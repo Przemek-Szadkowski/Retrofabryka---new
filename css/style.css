@@ -418,7 +418,10 @@ section.bikes div.bicycles a .bicycle:hover {
   }
   section.bikes div.bicycles a .bicycle {
     max-height: 26vh;
-    max-width: 26vw;
+    max-width: 36vw;
+  }
+  section.bikes div.bicycles a:last-child {
+    display: none;
   }
 }
 
@@ -574,9 +577,6 @@ section.parts div.column_left {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 10px;
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
 }
 
 section.parts div.column_left .part {
@@ -595,8 +595,8 @@ section.parts div.column_left .third {
 }
 
 section.parts div.column_right {
-  -ms-flex-preferred-size: 1auto;
-      flex-basis: 1auto;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -637,14 +637,14 @@ section.parts div.column_right p {
   letter-spacing: 1px;
 }
 
-@media (min-width: 560px) and (max-width: 799px) {
+@media (min-width: 560px) {
   section.parts div.column_left .part {
-    width: 65%;
-    height: 25vh;
+    width: 55%;
+    max-height: 28vh;
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   section.parts {
     height: auto;
     width: 100%;
@@ -660,9 +660,6 @@ section.parts div.column_right p {
     -ms-flex-preferred-size: 55%;
         flex-basis: 55%;
     height: auto;
-    -webkit-box-ordinal-group: 1;
-        -ms-flex-order: 0;
-            order: 0;
   }
   section.parts div.column_left .part {
     width: 100%;
@@ -722,7 +719,7 @@ section.parts div.column_right p {
   }
   section.parts div.column_right p {
     display: block;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     background-color: rgba(255, 255, 255, 0.25);
     border-radius: 25px;
     margin: 0 auto;
@@ -843,6 +840,7 @@ section.we div.portraites img {
   display: block;
   padding: 10px 40px 10px 40px;
   width: 100%;
+  margin: 0 auto;
 }
 
 section.we div.portraites p {
@@ -859,6 +857,9 @@ section.we div.portraites p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  section.we div.portraites img {
+    width: 80%;
   }
 }
 

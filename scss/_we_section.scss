@@ -53,6 +53,7 @@ section.we {
             display: block;
             padding: 10px 40px 10px 40px;
             width: 100%;
+            margin: 0 auto;
         }
 
         p {
@@ -69,6 +70,9 @@ section.we {
     section.we {
         div.portraites {
             flex-direction: column;
+            img {
+                width: 80%;
+            }
         }
     }
 }
