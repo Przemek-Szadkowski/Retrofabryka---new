@@ -73,9 +73,11 @@ section.parts {
             flex-direction: row;
             flex-wrap: wrap;
             align-content: center;
+            justify-content: center;
             .part {
                 width: 45%;
                 max-height: 35vh;
+                margin: 4px;
             }
             .second {
                 display: block;
