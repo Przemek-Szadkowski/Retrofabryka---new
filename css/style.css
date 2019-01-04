@@ -217,6 +217,7 @@ header nav a:hover {
 @media (min-width: 800px) {
   header {
     background-image: url(../img/zebatka_1024.png);
+    background-position: 10% 0%;
   }
   header div i {
     top: 5%;
@@ -751,7 +752,7 @@ section.parts div.column_right p {
 }
 
 section.items {
-  height: 100vh;
+  height: auto;
   width: 100%;
 }
 
@@ -772,10 +773,41 @@ section.items h2 {
   text-transform: uppercase;
 }
 
+section.items div.items_photo {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.items div.items_photo img {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  width: 100%;
+  padding: 20px;
+}
+
 @media (orientation: landscape) {
   section.items {
-    height: 100vh;
+    height: auto;
     width: 100%;
+  }
+  section.items div.items_photo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  section.items div.items_photo div {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  section.items div.items_photo div img {
+    width: 100%;
+    padding: 20px;
   }
 }
 

@@ -417,7 +417,6 @@ section.modal_wrapper i.on:hover {
         font-size: 2rem;
         text-transform: uppercase;
         text-align: center;
-        border: 1px solid #f26202;
         margin: 0 0 0 40px;
     }
 

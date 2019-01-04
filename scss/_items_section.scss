@@ -1,7 +1,7 @@
 //sekcja przedmiotów
 
 section.items {
-    height: 100vh;
+    height: auto;
     width: 100%;
 
     h1 {
@@ -20,12 +20,32 @@ section.items {
         text-align: center;
         text-transform: uppercase;
     }
+    div.items_photo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        img {
+            flex-basis: 50%;
+            width: 100%;
+            padding: 20px;
+        }
+    }
 }
 
 @media (orientation: landscape) {
     section.items {
-        height: 100vh;
+        height: auto;
         width: 100%;
+        div.items_photo {
+            display: flex;
+           div {
+               flex-basis: 50%;
+            img {
+                width: 100%;
+                padding: 20px;
+            }
+        }
+        }
     }
 }
 
