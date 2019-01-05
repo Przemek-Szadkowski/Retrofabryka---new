@@ -84,10 +84,10 @@ function showPhotos() {
   const items = document.querySelectorAll(".photo");
 
   items.forEach(function (item) {
-    if (scrollPosition - 500 > photoPosition - photoHeight) {
+    if (scrollPosition + 100 > photoPosition - photoHeight) {
       item.classList.remove("off");
     }
-    if (scrollPosition - 200 < photoPosition - photoHeight) {
+    if (scrollPosition + 200 < photoPosition - photoHeight) {
       item.classList.add("off");
     }
   });

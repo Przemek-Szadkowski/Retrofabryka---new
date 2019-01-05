@@ -784,7 +784,7 @@ section.items div.items_photo {
           flex-direction: column;
 }
 
-section.items div.items_photo div.photo {
+section.items div.items_photo div.item {
   -ms-flex-preferred-size: 20vh;
       flex-basis: 20vh;
   width: 80%;
@@ -794,15 +794,15 @@ section.items div.items_photo div.photo {
   background-position: center;
 }
 
-section.items div.items_photo div.photo.one {
+section.items div.items_photo div.item.one {
   background-image: url(../img/breloki.jpg);
 }
 
-section.items div.items_photo div.photo.two {
+section.items div.items_photo div.item.two {
   background-image: url(../img/lampka.jpg);
 }
 
-section.items div.items_photo div.photo.three {
+section.items div.items_photo div.item.three {
   background-image: url(../img/zegar.jpg);
 }
 
@@ -817,26 +817,26 @@ section.items div.items_photo div.photo.three {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  section.items div.items_photo div.photo {
+  section.items div.items_photo div.item {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
     margin: 5px;
-    height: 70vh;
+    height: 60vh;
     -webkit-transition: 1s;
     transition: 1s;
   }
-  section.items div.items_photo div.photo.one:hover {
+  section.items div.items_photo div.item.one:hover {
     -webkit-box-flex: 5;
         -ms-flex-positive: 5;
             flex-grow: 5;
   }
-  section.items div.items_photo div.photo.two:hover {
+  section.items div.items_photo div.item.two:hover {
     -webkit-box-flex: 5;
         -ms-flex-positive: 5;
             flex-grow: 5;
   }
-  section.items div.items_photo div.photo.three:hover {
+  section.items div.items_photo div.item.three:hover {
     -webkit-box-flex: 5;
         -ms-flex-positive: 5;
             flex-grow: 5;

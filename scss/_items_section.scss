@@ -24,7 +24,7 @@ section.items {
         width: 100%;
         display: flex;
         flex-direction: column;
-        div.photo {
+        div.item {
             flex-basis: 20vh;
             width: 80%;
             margin: 20px auto;
@@ -50,10 +50,10 @@ section.items {
         width: 100%;
         div.items_photo {
             flex-direction: row;
-            div.photo {
+            div.item {
                 flex-grow: 1;
                 margin: 5px;
-                height: 70vh;
+                height: 60vh;
                 transition: 1s;
                 &.one:hover {
                     flex-grow: 5;
