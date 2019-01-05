@@ -864,6 +864,7 @@ section.we {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 40px 0;
 }
 
 section.we div.description {
