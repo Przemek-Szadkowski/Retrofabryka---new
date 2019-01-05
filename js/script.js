@@ -10,19 +10,19 @@ const startButton = document.getElementById("start");
 
 // events - buttons
 
-bars.addEventListener("click", function() {
+bars.addEventListener("click", function () {
   bars.classList.add("off");
   close.classList.remove("off");
   menu.classList.remove("off");
 });
-close.addEventListener("click", function() {
+close.addEventListener("click", function () {
   close.classList.add("off");
   bars.classList.remove("off");
   menu.classList.add("off");
 });
 
-menuButtons.forEach(function(menuButton) {
-  menuButton.addEventListener("click", function() {
+menuButtons.forEach(function (menuButton) {
+  menuButton.addEventListener("click", function () {
     close.classList.add("off");
     bars.classList.remove("off");
     menu.classList.add("off");
@@ -31,7 +31,7 @@ menuButtons.forEach(function(menuButton) {
 
 // modal
 
-regButton.addEventListener("click", function() {
+regButton.addEventListener("click", function () {
   modal.classList.remove("off");
   closeButton.classList.add("on");
   modalWrapper.classList.add("active");
@@ -40,7 +40,7 @@ regButton.addEventListener("click", function() {
   menu.classList.add("off");
 });
 
-closeButton.addEventListener("click", function() {
+closeButton.addEventListener("click", function () {
   modal.classList.add("off");
   closeButton.classList.remove("on");
   modalWrapper.classList.remove("active");
@@ -48,7 +48,7 @@ closeButton.addEventListener("click", function() {
 
 // start button
 
-startButton.addEventListener("click", function() {
+startButton.addEventListener("click", function () {
   close.classList.add("off");
   bars.classList.remove("off");
   menu.classList.add("off");
@@ -56,7 +56,7 @@ startButton.addEventListener("click", function() {
 
 // scrolling
 
-$("#start").on("click", function() {
+$("#start").on("click", function () {
   $("body, html").animate(
     {
       scrollTop: $("#top").offset().top
@@ -65,7 +65,7 @@ $("#start").on("click", function() {
   );
 });
 
-$(".fa-angle-double-up").on("click", function() {
+$(".fa-angle-double-up").on("click", function () {
   $("body, html").animate(
     {
       scrollTop: $("#main_title").offset().top
@@ -83,11 +83,11 @@ function showPhotos() {
   const photoPosition = document.querySelector(".photo").offsetTop;
   const items = document.querySelectorAll(".photo");
 
-  items.forEach(function(item) {
-    if (scrollPosition + 100 > photoPosition - photoHeight) {
+  items.forEach(function (item) {
+    if (scrollPosition - 700 > photoPosition - photoHeight) {
       item.classList.remove("off");
     }
-    if (scrollPosition + 200 < photoPosition - photoHeight) {
+    if (scrollPosition - 200 < photoPosition - photoHeight) {
       item.classList.add("off");
     }
   });
@@ -99,7 +99,7 @@ function movePhotos() {
   const partsPosition = document.querySelector(".part").offsetTop;
   const items = document.querySelectorAll(".part");
 
-  items.forEach(function(item) {
+  items.forEach(function (item) {
     if (scrollPosition + 200 > partsPosition - partsHeight) {
       item.classList.add("active");
     }

@@ -24,10 +24,22 @@ section.items {
         width: 100%;
         display: flex;
         flex-direction: column;
-        img {
-            flex-basis: 50%;
-            width: 100%;
-            padding: 20px;
+        div.photo {
+            flex-basis: 20vh;
+            width: 80%;
+            margin: 20px auto;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            &.one {
+                background-image: url(../img/breloki.jpg);
+            }
+            &.two {
+                background-image: url(../img/lampka.jpg);
+            }
+            &.three {
+                background-image: url(../img/zegar.jpg);
+            }
         }
     }
 }
@@ -37,14 +49,22 @@ section.items {
         height: auto;
         width: 100%;
         div.items_photo {
-            display: flex;
-           div {
-               flex-basis: 50%;
-            img {
-                width: 100%;
-                padding: 20px;
+            flex-direction: row;
+            div.photo {
+                flex-grow: 1;
+                margin: 5px;
+                height: 70vh;
+                transition: 1s;
+                &.one:hover {
+                    flex-grow: 5;
+                }
+                &.two:hover {
+                    flex-grow: 5;
+                }
+                &.three:hover {
+                    flex-grow: 5;
+                }
             }
-        }
         }
     }
 }
