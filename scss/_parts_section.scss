@@ -65,6 +65,13 @@ section.parts {
             letter-spacing: 1px;
         }
     }
+    div.brands {
+            width: 95%;
+            height: 15vh;
+            margin: 20px auto 10px;
+            background-image: url(../img/marki.png);
+            background-size: contain;
+    }
 }
 
 @media (min-width: 580px) {
@@ -153,7 +160,7 @@ section.parts {
 
             p {
                 display: block;
-                font-size: 1.1rem;
+                font-size: 1.2rem;
                 background-color: rgba(255, 255, 255, .25);
                 border-radius: 25px;
                 margin: 0 auto;
@@ -163,5 +170,8 @@ section.parts {
                 width: 80%;
             }
         }
+    }
+    div.brands {
+        display: none;
     }
 }

@@ -20,6 +20,15 @@ section.items {
         text-align: center;
         text-transform: uppercase;
     }
+    p {
+        font-size: 1rem;
+        background-color: rgba(255, 255, 255, .25);
+        border-radius: 25px;
+        margin: 0 20px 20px 20px;
+        padding: 10px;
+        text-align: center;
+        letter-spacing: 1px;
+    }
     div.items_photo {
         width: 100%;
         display: flex;
