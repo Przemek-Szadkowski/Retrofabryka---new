@@ -198,3 +198,9 @@ header {
         background-position: 110% 0%;
     }
 }
+
+@media (min-height: 750px) {
+    header {
+        background-position: -40%;
+    }
+}

@@ -231,6 +231,12 @@ header nav a:hover {
   }
 }
 
+@media (min-height: 750px) {
+  header {
+    background-position: -40%;
+  }
+}
+
 section.bikes {
   height: auto;
   width: 100%;
