@@ -838,6 +838,8 @@ section.items div.items_photo div.item.three {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin: 0 auto;
+    padding: 0 20px;
   }
   section.items div.items_photo div.item {
     -webkit-box-flex: 1;
