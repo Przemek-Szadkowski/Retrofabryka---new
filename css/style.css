@@ -644,6 +644,7 @@ section.parts div.brands {
   margin: 20px auto 10px;
   background-image: url(../img/marki.png);
   background-size: contain;
+  background-position: center;
 }
 
 @media (min-width: 580px) {
