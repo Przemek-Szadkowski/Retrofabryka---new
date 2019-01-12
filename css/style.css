@@ -339,7 +339,7 @@ section.bikes div.bicycles a .bicycle:hover {
     font-size: 1.8rem;
   }
   section.bikes div.slogan p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -659,6 +659,12 @@ section.parts div.brands {
   background-position: center;
 }
 
+@media (orientation: landscape) and (max-width: 580px) {
+  section.parts div.column_left .part {
+    max-width: 50%;
+  }
+}
+
 @media (min-width: 580px) {
   section.parts div.column_left {
     -webkit-box-orient: horizontal;
@@ -674,7 +680,7 @@ section.parts div.brands {
             justify-content: center;
   }
   section.parts div.column_left .part {
-    width: 45%;
+    width: 35%;
     max-height: 35vh;
     margin: 4px;
   }
@@ -706,6 +712,7 @@ section.parts div.brands {
   section.parts div.column_left .part {
     width: 100%;
     height: 20vh;
+    max-height: 20vh;
     -webkit-transform: translateX(-1000px);
             transform: translateX(-1000px);
     -webkit-transition: 1.2s;
@@ -891,6 +898,7 @@ section.items div.items_photo div.item.three {
   }
   section.items p {
     font-size: 1.2rem;
+    margin-bottom: 30px;
   }
   section.items div.items_photo div.item.two {
     background-image: url(../img/lampka.jpg);

@@ -445,8 +445,8 @@ section.modal_wrapper i.on:hover {
         height: auto;
         transform: scale(1);
         transition: .3s;
-        flex-basis: 50%;
-        margin-left: 10px;
+        flex-basis: 45%;
+        margin-left: 25px;
     }
 
     div.segment div.main_photo p span.orange_line {
