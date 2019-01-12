@@ -44,7 +44,7 @@ section.items {
                 background-image: url(../img/breloki.jpg);
             }
             &.two {
-                background-image: url(../img/lampka.jpg);
+                background-image: url(../img/lampka_mala.jpg);
             }
             &.three {
                 background-image: url(../img/zegar.jpg);
@@ -66,6 +66,9 @@ section.items {
                 margin: 5px;
                 height: 60vh;
                 transition: 1s;
+                &.two {
+                background-image: url(../img/lampka.jpg);
+                }
                 &.one:hover {
                     flex-grow: 5;
                 }
@@ -94,6 +97,13 @@ section.items {
         }
         p {
             font-size: 1.2rem;
+        }
+        div.items_photo {
+            div.item {
+                &.two {
+                    background-image: url(../img/lampka.jpg);
+                }
+            }
         }
     }
 }

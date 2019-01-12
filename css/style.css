@@ -833,7 +833,7 @@ section.items div.items_photo div.item.one {
 }
 
 section.items div.items_photo div.item.two {
-  background-image: url(../img/lampka.jpg);
+  background-image: url(../img/lampka_mala.jpg);
 }
 
 section.items div.items_photo div.item.three {
@@ -862,6 +862,9 @@ section.items div.items_photo div.item.three {
     -webkit-transition: 1s;
     transition: 1s;
   }
+  section.items div.items_photo div.item.two {
+    background-image: url(../img/lampka.jpg);
+  }
   section.items div.items_photo div.item.one:hover {
     -webkit-box-flex: 5;
         -ms-flex-positive: 5;
@@ -888,6 +891,9 @@ section.items div.items_photo div.item.three {
   }
   section.items p {
     font-size: 1.2rem;
+  }
+  section.items div.items_photo div.item.two {
+    background-image: url(../img/lampka.jpg);
   }
 }
 
