@@ -452,6 +452,12 @@ section.bikes div.bicycles a .bicycle:hover {
   }
 }
 
+@media (min-height: 750px) {
+  section.bikes div.bicycles a:last-child {
+    display: none;
+  }
+}
+
 section.workshop {
   height: auto;
   width: 100%;
@@ -879,6 +885,9 @@ section.items div.items_photo div.item.three {
   }
   section.items h2 {
     font-size: 1.8rem;
+  }
+  section.items p {
+    font-size: 1.2rem;
   }
 }
 

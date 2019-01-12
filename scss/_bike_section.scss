@@ -222,3 +222,13 @@ section.bikes {
         }
     }
 }
+
+@media (min-height: 750px) {
+    section.bikes {
+        div.bicycles {
+            a:last-child {
+                display: none;
+            }
+        }
+    }
+}

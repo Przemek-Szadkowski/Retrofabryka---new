@@ -182,12 +182,12 @@ div.main_photo p {
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 20px;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     text-transform: uppercase;
     text-align: center;
 }
 
-div.segment div.main_photo p span {
+div.segment div.main_photo p span.orange_line {
     position: absolute;
     width: 100%;
     top: 50%;
@@ -244,6 +244,24 @@ div.photos img {
     max-width: 80%;
     max-height: auto;
 }
+
+div.main_photo div.parameters {
+    width: 100%;
+    height: auto;
+}
+
+div.main_photo div.parameters p {
+    color: rgb(163, 163, 163);
+    font-size: .9rem;
+    text-align: center;
+    padding: 5px 0;
+    line-height: .1rem;
+    margin-top: 2px;
+}
+div.main_photo div.parameters p span {
+    color: #f26202;
+}
+
 
 /* sekcja modala */
 
@@ -400,27 +418,38 @@ section.modal_wrapper i.on:hover {
 
 
     div.main_photo {
-        flex-basis: 70%;
-        width: 100%;
+        position: relative;
         display: flex;
         flex-direction: row;
-        justify-content: center;
         margin: 30px auto 20px;
         padding-top: 40px 0;
     }
 
-    div.main_photo p {
-        flex-basis: 65%;
-        width: 100%;
-        position: relative;
-        padding: 20px;
-        font-size: 2rem;
-        text-transform: uppercase;
-        text-align: center;
-        margin: 0 0 0 40px;
+    div.main_photo div {
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
     }
 
-    div.segment div.main_photo p span {
+    div.main_photo p {
+        flex-basis: 20%;
+        position: relative;
+        /* padding: 20px; */
+        font-size: 1.7rem;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    div.main_photo a {
+        display: block;
+        height: auto;
+        transform: scale(1);
+        transition: .3s;
+        flex-basis: 50%;
+        margin-left: 10px;
+    }
+
+    div.segment div.main_photo p span.orange_line {
         position: absolute;
         width: 100%;
         top: 50%;
@@ -430,12 +459,19 @@ section.modal_wrapper i.on:hover {
         color: #f26202;
     }
 
-    div.main_photo a {
-        display: block;
-        flex-basis: 35%;
-        height: auto;
-        transform: scale(1);
-        transition: .3s;
+    div.main_photo div.parameters {
+        flex-basis: 80%;
+    }
+
+    div.main_photo div.parameters p {
+        color: rgb(163, 163, 163);
+        font-size: 1rem;
+        text-align: center;
+        line-height: .6rem;
+        padding: 0;
+    }
+    div.main_photo div.parameters p span {
+        color: #f26202;
     }
 
     div.main_photo a:hover {
