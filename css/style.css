@@ -428,7 +428,7 @@ section.bikes div.bicycles a .bicycle:hover {
     font-size: 1.8rem;
   }
   section.bikes div.slogan p {
-    font-size: 1.2rem;
+    font-size: .9rem;
   }
 }
 
@@ -520,7 +520,7 @@ section.workshop div.workshop_wrapper p {
     font-size: 2.6rem;
   }
   section.workshop div.workshop_wrapper p {
-    font-size: 1.2rem;
+    font-size: .9rem;
     padding: 5px;
     margin-bottom: 30px;
   }
