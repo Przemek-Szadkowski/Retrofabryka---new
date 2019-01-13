@@ -75,25 +75,7 @@ section.bikes {
     }
 }
 
-@media (max-width: 1120px) {
-    section.bikes {
-        div.slogan {
-            h1 {
-                font-size: 2.2rem;
-            }
-
-            h2 {
-                font-size: 1.8rem;
-            }
-
-            p {
-                font-size: 1.2rem;
-            }
-        }
-    }
-}
-
-@media (max-width: 1035px) {
+@media (orientation: portrait) {
     section.bikes {
         height: auto;
 
@@ -103,12 +85,48 @@ section.bikes {
 
         div.bicycles {
             flex-basis: auto;
-            max-width: 90vw;
+
+            a {
+                .bicycle {
+                    max-height: 26vh;
+                    max-width: 36vw;
+                }
+                &:last-child {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 540px) {
+    section.bikes {
+        height: auto;
+
+        div.bicycles {
+            flex-basis: auto;
+
+            a {
+                .bicycle {
+                    max-height: 26vh;
+                    max-width: 26vw;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 690px) {
+    section.bikes {
+        height: auto;
+
+        div.bicycles {
+            flex-basis: auto;
 
             a {
                 .bicycle {
                     max-height: 30vh;
-                    max-width: 28vw;
+                    max-width: 26vw;
                 }
             }
         }
@@ -140,41 +158,7 @@ section.bikes {
     }
 }
 
-@media (max-width: 690px) {
-    section.bikes {
-        height: auto;
-
-        div.bicycles {
-            flex-basis: auto;
-
-            a {
-                .bicycle {
-                    max-height: 30vh;
-                    max-width: 26vw;
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 540px) {
-    section.bikes {
-        height: auto;
-
-        div.bicycles {
-            flex-basis: auto;
-
-            a {
-                .bicycle {
-                    max-height: 26vh;
-                    max-width: 26vw;
-                }
-            }
-        }
-    }
-}
-
-@media (orientation: portrait) {
+@media (max-width: 1035px) {
     section.bikes {
         height: auto;
 
@@ -184,19 +168,36 @@ section.bikes {
 
         div.bicycles {
             flex-basis: auto;
+            max-width: 90vw;
 
             a {
                 .bicycle {
-                    max-height: 26vh;
-                    max-width: 36vw;
-                }
-                &:last-child {
-                    display: none;
+                    max-height: 30vh;
+                    max-width: 28vw;
                 }
             }
         }
     }
 }
+
+@media (max-width: 1120px) {
+    section.bikes {
+        div.slogan {
+            h1 {
+                font-size: 2.2rem;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
 
 @media (orientation: portrait) and (max-width: 390px) {
     section.bikes {

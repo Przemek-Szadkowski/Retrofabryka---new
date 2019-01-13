@@ -331,19 +331,7 @@ section.bikes div.bicycles a .bicycle:hover {
   cursor: pointer;
 }
 
-@media (max-width: 1120px) {
-  section.bikes div.slogan h1 {
-    font-size: 2.2rem;
-  }
-  section.bikes div.slogan h2 {
-    font-size: 1.8rem;
-  }
-  section.bikes div.slogan p {
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 1035px) {
+@media (orientation: portrait) {
   section.bikes {
     height: auto;
   }
@@ -354,11 +342,41 @@ section.bikes div.bicycles a .bicycle:hover {
   section.bikes div.bicycles {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
-    max-width: 90vw;
+  }
+  section.bikes div.bicycles a .bicycle {
+    max-height: 26vh;
+    max-width: 36vw;
+  }
+  section.bikes div.bicycles a:last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 540px) {
+  section.bikes {
+    height: auto;
+  }
+  section.bikes div.bicycles {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+  }
+  section.bikes div.bicycles a .bicycle {
+    max-height: 26vh;
+    max-width: 26vw;
+  }
+}
+
+@media (max-width: 690px) {
+  section.bikes {
+    height: auto;
+  }
+  section.bikes div.bicycles {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
   }
   section.bikes div.bicycles a .bicycle {
     max-height: 30vh;
-    max-width: 28vw;
+    max-width: 26vw;
   }
 }
 
@@ -383,35 +401,7 @@ section.bikes div.bicycles a .bicycle:hover {
   }
 }
 
-@media (max-width: 690px) {
-  section.bikes {
-    height: auto;
-  }
-  section.bikes div.bicycles {
-    -ms-flex-preferred-size: auto;
-        flex-basis: auto;
-  }
-  section.bikes div.bicycles a .bicycle {
-    max-height: 30vh;
-    max-width: 26vw;
-  }
-}
-
-@media (max-width: 540px) {
-  section.bikes {
-    height: auto;
-  }
-  section.bikes div.bicycles {
-    -ms-flex-preferred-size: auto;
-        flex-basis: auto;
-  }
-  section.bikes div.bicycles a .bicycle {
-    max-height: 26vh;
-    max-width: 26vw;
-  }
-}
-
-@media (orientation: portrait) {
+@media (max-width: 1035px) {
   section.bikes {
     height: auto;
   }
@@ -422,13 +412,23 @@ section.bikes div.bicycles a .bicycle:hover {
   section.bikes div.bicycles {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
+    max-width: 90vw;
   }
   section.bikes div.bicycles a .bicycle {
-    max-height: 26vh;
-    max-width: 36vw;
+    max-height: 30vh;
+    max-width: 28vw;
   }
-  section.bikes div.bicycles a:last-child {
-    display: none;
+}
+
+@media (max-width: 1120px) {
+  section.bikes div.slogan h1 {
+    font-size: 2.2rem;
+  }
+  section.bikes div.slogan h2 {
+    font-size: 1.8rem;
+  }
+  section.bikes div.slogan p {
+    font-size: 1.2rem;
   }
 }
 
