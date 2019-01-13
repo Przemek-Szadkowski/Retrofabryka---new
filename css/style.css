@@ -422,10 +422,10 @@ section.bikes div.bicycles a .bicycle:hover {
 
 @media (max-width: 1120px) {
   section.bikes div.slogan h1 {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
   }
   section.bikes div.slogan h2 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   section.bikes div.slogan p {
     font-size: .9rem;
@@ -517,7 +517,7 @@ section.workshop div.workshop_wrapper p {
     background-image: url(../img/warsztat_800.png);
   }
   section.workshop div.workshop_wrapper h1 {
-    font-size: 2.6rem;
+    font-size: 1.8rem;
   }
   section.workshop div.workshop_wrapper p {
     font-size: .9rem;
@@ -555,7 +555,7 @@ section.workshop div.workshop_wrapper p {
     font-size: 2.6rem;
   }
   section.workshop div.workshop_wrapper h2 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   section.workshop div.workshop_wrapper p {
     font-size: 1.2rem;
