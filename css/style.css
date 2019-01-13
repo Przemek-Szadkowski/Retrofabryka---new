@@ -425,7 +425,7 @@ section.bikes div.bicycles a .bicycle:hover {
     font-size: 1.8rem;
   }
   section.bikes div.slogan h2 {
-    font-size: 1.6rem;
+    font-size: 1.1rem;
   }
   section.bikes div.slogan p {
     font-size: .9rem;
@@ -497,7 +497,7 @@ section.workshop div.workshop_wrapper h1 {
 section.workshop div.workshop_wrapper h2 {
   padding: 20px 10px 20px 10px;
   color: white;
-  font-size: 1.6rem;
+  font-size: 1.1rem;
   text-align: center;
   text-transform: uppercase;
 }
