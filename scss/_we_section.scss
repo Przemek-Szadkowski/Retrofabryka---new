@@ -17,6 +17,9 @@ section.we {
             text-transform: uppercase;
             letter-spacing: 1px;
             padding: 20px;
+            & + h1 {
+                padding-top: 0;
+            }
         }
 
         p {

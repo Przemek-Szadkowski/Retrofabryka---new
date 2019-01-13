@@ -805,7 +805,7 @@ section.items h2 {
 }
 
 section.items p {
-  font-size: 1rem;
+  font-size: .9rem;
   background-color: rgba(255, 255, 255, 0.25);
   border-radius: 25px;
   margin: 0 20px 20px 20px;
@@ -931,6 +931,10 @@ section.we div.description h1 {
   text-transform: uppercase;
   letter-spacing: 1px;
   padding: 20px;
+}
+
+section.we div.description h1 + h1 {
+  padding-top: 0;
 }
 
 section.we div.description p {
