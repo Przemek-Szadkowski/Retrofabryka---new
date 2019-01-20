@@ -213,7 +213,7 @@ header nav a:hover {
 
 @media (min-width: 600px) {
   header {
-    background-position: -20% 0%;
+    background-position: 0% 0%;
     background-image: url(../img/zebatka_768.png);
   }
   header div.logo h1 {
