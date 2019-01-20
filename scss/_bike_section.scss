@@ -75,29 +75,7 @@ section.bikes {
     }
 }
 
-@media (orientation: portrait) {
-    section.bikes {
-        height: auto;
 
-        div.slogan {
-            flex-basis: auto;
-        }
-
-        div.bicycles {
-            flex-basis: auto;
-
-            a {
-                .bicycle {
-                    max-height: 26vh;
-                    max-width: 36vw;
-                }
-                &:last-child {
-                    display: none;
-                }
-            }
-        }
-    }
-}
 
 @media (max-width: 540px) {
     section.bikes {
@@ -109,7 +87,7 @@ section.bikes {
             a {
                 .bicycle {
                     max-height: 26vh;
-                    max-width: 26vw;
+                    flex-grow: 1;
                 }
             }
         }
@@ -126,7 +104,7 @@ section.bikes {
             a {
                 .bicycle {
                     max-height: 30vh;
-                    max-width: 26vw;
+                    flex-grow: 1;
                 }
             }
         }
@@ -151,7 +129,7 @@ section.bikes {
             a {
                 .bicycle {
                     max-height: 33vh;
-                    max-width: 26vw;
+                    flex-grow: 1;
                 }
             }
         }
@@ -173,7 +151,7 @@ section.bikes {
             a {
                 .bicycle {
                     max-height: 30vh;
-                    max-width: 28vw;
+                    flex-grow: 1;
                 }
             }
         }
@@ -224,7 +202,31 @@ section.bikes {
     }
 }
 
-@media (min-height: 750px) {
+@media (orientation: portrait) {
+    section.bikes {
+        height: auto;
+
+        div.slogan {
+            flex-basis: auto;
+        }
+
+        div.bicycles {
+            flex-basis: auto;
+
+            a {
+                .bicycle {
+                    max-height: 26vh;
+                    max-width: 36vw;
+                }
+                &:last-child {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (min-height: 950px) {
     section.bikes {
         div.bicycles {
             a:last-child {

@@ -8,7 +8,7 @@ header {
     background-size: 80vh;
     background-repeat: no-repeat;
     background-position: 180% 0%;
-    background-attachment: fixed;
+    // background-attachment: fixed;
 
     div.logo {
         position: absolute;
@@ -24,7 +24,7 @@ header {
             left: 5%;
             transform: translateY(-50%);
             color: white;
-            font-size: 1.3rem;
+            font-size: 1.5rem;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
@@ -35,7 +35,7 @@ header {
             right: 0%;
             transform: translateY(-50%);
             margin: 0 auto;
-            height: 20vh;
+            height: 15vh;
         }
     }
 
@@ -148,6 +148,12 @@ header {
 
 }
 
+@media (orientation: portrait) {
+    header {
+        background-position:90% 0%;
+    }
+}
+
 @media (orientation: landscape) {
     header {
         background-size: contain;
@@ -163,8 +169,8 @@ header {
 
             img {
                 top: 70%;
-                right: 5%;
-                height: 35vh;
+                right: 8%;
+                height: 40vh;
             }
         }
     }
@@ -172,35 +178,100 @@ header {
 
 @media (min-width: 600px) {
     header {
+        background-position: -20% 0%;
         background-image: url(../img/zebatka_768.png);
-
-        div i {
-            top: 5%;
-            right: 4%;
+        div.logo {
+            h1 {
+                font-size: 2rem;
+            }
+            img {
+                right: 8%;
+            }
         }
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 682px) and (max-width: 980px) {
+    header {
+        background-position: -40% 0%;
+        background-size: 80vh;
+        div.logo {
+            position: absolute;
+            bottom: 0%;
+            left: 0%;
+            height: 20vh;
+            width: 100%;
+            background-color: rgb(30, 30, 30);
+    
+            h1 {
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 10%;
+                transform: translateY(-50%);
+                color: white;
+                font-size: 2.5rem;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+    
+            img {
+                position: absolute;
+                top: 50%;
+                right: 10%;
+                transform: translateY(-50%);
+                margin: 0 auto;
+                height: 18vh;
+            }
+        }
+    }
+}
+
+@media (min-width: 981px) {
     header {
         background-image: url(../img/zebatka_1024.png);
-        background-position: 15% 0%;
-
-        div i {
-            top: 5%;
-            right: 3%;
+        div.logo {
+            img {
+                height: 35vh;
+                right: 2%;
+            }
         }
     }
 }
 
-@media (orientation: portrait) {
+@media (orientation: landscape) and (max-width: 850px) {
     header {
-        background-position: 110% 0%;
+        background-position: 0% 0%;
     }
 }
 
-@media (min-height: 750px) {
+@media (min-height: 1024px) and (min-width: 1025px) {
     header {
-        background-position: -40%;
+                background-position: -140%;
+                div.logo {
+                    img {
+                        right: 2%;
+                    }
+                }
+            }
+}
+
+@media (min-height: 900px) and (min-width: 1000px) {
+    header {
+        background-position: -120% 0%;
+    }
+}
+
+@media (min-height: 1300px) {
+    header {
+        div.logo {
+            h1 {
+                font-size: 4rem;
+            }
+            img {
+                height: 20vh;
+                right: 3%;
+            }
+        }
     }
 }
