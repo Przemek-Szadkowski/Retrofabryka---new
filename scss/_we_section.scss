@@ -10,14 +10,14 @@ section.we {
     div.description {
         height: auto;
 
-        h1 {
+        h2 {
             color: white;
             font-size: 1.6rem;
             text-align: center;
             text-transform: uppercase;
             letter-spacing: 1px;
             padding: 20px;
-            & + h1 {
+            & + h2 {
                 padding-top: 0;
             }
         }
@@ -84,7 +84,7 @@ section.we {
 @media (min-width:920px) {
     section.we {
         div.description {
-            h1 {
+            h2 {
                 font-size: 2.6rem;
             }
 

@@ -331,7 +331,7 @@ section.bikes div.slogan {
       justify-content: space-around;
 }
 
-section.bikes div.slogan h1 {
+section.bikes div.slogan h2 {
   color: white;
   font-size: 2.6rem;
   text-align: center;
@@ -340,7 +340,7 @@ section.bikes div.slogan h1 {
   padding-top: 20px;
 }
 
-section.bikes div.slogan h2 {
+section.bikes div.slogan h3 {
   padding: 20px 10px 20px 10px;
   color: white;
   font-size: 2rem;
@@ -435,7 +435,7 @@ section.bikes div.bicycles a .bicycle:hover {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
   }
-  section.bikes div.slogan h2 {
+  section.bikes div.slogan h3 {
     font-size: 1.4rem;
   }
   section.bikes div.bicycles {
@@ -472,10 +472,10 @@ section.bikes div.bicycles a .bicycle:hover {
 }
 
 @media (max-width: 1120px) {
-  section.bikes div.slogan h1 {
+  section.bikes div.slogan h2 {
     font-size: 1.8rem;
   }
-  section.bikes div.slogan h2 {
+  section.bikes div.slogan h3 {
     font-size: 1.1rem;
   }
   section.bikes div.slogan p {
@@ -487,10 +487,10 @@ section.bikes div.bicycles a .bicycle:hover {
   section.bikes {
     height: auto;
   }
-  section.bikes div.slogan h1 {
+  section.bikes div.slogan h2 {
     font-size: 1.6rem;
   }
-  section.bikes div.slogan h2 {
+  section.bikes div.slogan h3 {
     font-size: 1.1rem;
   }
   section.bikes div.slogan p {
@@ -557,7 +557,7 @@ section.workshop div.workshop_wrapper {
   padding-bottom: 20px;
 }
 
-section.workshop div.workshop_wrapper h1 {
+section.workshop div.workshop_wrapper h2 {
   color: white;
   font-size: 2rem;
   text-align: center;
@@ -566,7 +566,7 @@ section.workshop div.workshop_wrapper h1 {
   padding-top: 20px;
 }
 
-section.workshop div.workshop_wrapper h2 {
+section.workshop div.workshop_wrapper h3 {
   padding: 20px 10px 20px 10px;
   color: white;
   font-size: 1.1rem;
@@ -588,7 +588,7 @@ section.workshop div.workshop_wrapper p {
   section.workshop {
     background-image: url(../img/warsztat_800.png);
   }
-  section.workshop div.workshop_wrapper h1 {
+  section.workshop div.workshop_wrapper h2 {
     font-size: 1.8rem;
   }
   section.workshop div.workshop_wrapper p {
@@ -599,10 +599,10 @@ section.workshop div.workshop_wrapper p {
 }
 
 @media (max-width: 600px) {
-  section.workshop div.workshop_wrapper h1 {
+  section.workshop div.workshop_wrapper h2 {
     font-size: 1.6rem;
   }
-  section.workshop div.workshop_wrapper h2 {
+  section.workshop div.workshop_wrapper h3 {
     font-size: 1.1rem;
   }
   section.workshop div.workshop_wrapper p {
@@ -623,10 +623,10 @@ section.workshop div.workshop_wrapper p {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  section.workshop div.workshop_wrapper h1 {
+  section.workshop div.workshop_wrapper h2 {
     font-size: 2.6rem;
   }
-  section.workshop div.workshop_wrapper h2 {
+  section.workshop div.workshop_wrapper h3 {
     font-size: 1.6rem;
   }
   section.workshop div.workshop_wrapper p {
@@ -694,7 +694,7 @@ section.parts div.column_right {
           justify-content: center;
 }
 
-section.parts div.column_right h1 {
+section.parts div.column_right h2 {
   color: white;
   font-size: 1.6rem;
   text-align: center;
@@ -703,7 +703,7 @@ section.parts div.column_right h1 {
   padding-top: 20px;
 }
 
-section.parts div.column_right h2 {
+section.parts div.column_right h3 {
   padding: 20px 10px 20px 10px;
   color: white;
   font-size: 1.1rem;
@@ -823,7 +823,7 @@ section.parts div.brands {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  section.parts div.column_right h1 {
+  section.parts div.column_right h2 {
     color: white;
     font-size: 2.6rem;
     text-align: center;
@@ -831,7 +831,7 @@ section.parts div.brands {
     letter-spacing: 1px;
     padding-top: 0px;
   }
-  section.parts div.column_right h2 {
+  section.parts div.column_right h3 {
     padding: 20px 10px 20px 10px;
     color: white;
     font-size: 1.8rem;
@@ -859,7 +859,7 @@ section.items {
   width: 100%;
 }
 
-section.items h1 {
+section.items h2 {
   color: white;
   font-size: 1.6rem;
   text-align: center;
@@ -868,7 +868,7 @@ section.items h1 {
   padding-top: 20px;
 }
 
-section.items h2 {
+section.items h3 {
   padding: 20px 10px 20px 10px;
   color: white;
   font-size: 1.1rem;
@@ -962,10 +962,10 @@ section.items div.items_photo div.item.three {
 }
 
 @media (min-width: 740px) {
-  section.items h1 {
+  section.items h2 {
     font-size: 2.6rem;
   }
-  section.items h2 {
+  section.items h3 {
     font-size: 1.8rem;
   }
   section.items p {
@@ -996,7 +996,7 @@ section.we div.description {
   height: auto;
 }
 
-section.we div.description h1 {
+section.we div.description h2 {
   color: white;
   font-size: 1.6rem;
   text-align: center;
@@ -1005,7 +1005,7 @@ section.we div.description h1 {
   padding: 20px;
 }
 
-section.we div.description h1 + h1 {
+section.we div.description h2 + h2 {
   padding-top: 0;
 }
 
@@ -1078,7 +1078,7 @@ section.we div.portraites p {
 }
 
 @media (min-width: 920px) {
-  section.we div.description h1 {
+  section.we div.description h2 {
     font-size: 2.6rem;
   }
   section.we div.description p {
@@ -1099,7 +1099,7 @@ section.we div.portraites p {
   margin-top: 20px;
 }
 
-.banner h1 {
+.banner h2 {
   position: absolute;
   top: 95%;
   left: 0;
@@ -1115,7 +1115,7 @@ section.we div.portraites p {
 }
 
 @media (min-width: 800px) {
-  .banner h1 {
+  .banner h2 {
     line-height: 6rem;
     font-size: 3rem;
     top: 0%;
@@ -1143,7 +1143,7 @@ section.we div.portraites p {
   margin-top: 35px;
 }
 
-.contact div.top h1 {
+.contact div.top h2 {
   color: #f26202;
   font-size: 1.6rem;
   text-align: center;
@@ -1152,7 +1152,7 @@ section.we div.portraites p {
   padding: 30px 20px 10px;
 }
 
-.contact div.top h2 {
+.contact div.top h3 {
   padding: 10px;
   color: white;
   font-size: 1.4rem;
@@ -1205,7 +1205,7 @@ section.we div.portraites p {
   margin: 20px 0;
 }
 
-.contact div.footer h2 {
+.contact div.footer h3 {
   height: 50px;
   padding: 10px;
   font-size: .8rem;
@@ -1217,7 +1217,7 @@ section.we div.portraites p {
 }
 
 @media (orientation: landscape) {
-  .contact div.top h2 {
+  .contact div.top h3 {
     letter-spacing: 3px;
   }
   .contact div.main_contact p.orange {
@@ -1230,11 +1230,11 @@ section.we div.portraites p {
 }
 
 @media (min-width: 740px) {
-  .contact div.top h1 {
+  .contact div.top h2 {
     font-size: 3.2rem;
     margin-top: 20px;
   }
-  .contact div.top h2 {
+  .contact div.top h3 {
     font-size: 2.4rem;
   }
   .contact div.main_contact p.orange {
@@ -1248,7 +1248,7 @@ section.we div.portraites p {
     height: 350px;
     width: 600px;
   }
-  .contact div.footer h2 {
+  .contact div.footer h3 {
     font-size: .8rem;
     text-transform: uppercase;
   }
@@ -1346,7 +1346,7 @@ section.modal_wrapper div.modal h4 {
 }
 
 section.modal_wrapper div.modal .main_ol {
-  list-style: upper-alpha;
+  list-style: decimal;
   list-style-position: outside;
   padding-bottom: 10px;
   padding-top: 20px;

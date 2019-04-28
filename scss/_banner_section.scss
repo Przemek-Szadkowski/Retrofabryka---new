@@ -9,7 +9,7 @@
     background-size: cover;
     margin-top: 20px;
 
-    h1 {
+    h2 {
         position: absolute;
         top: 95%;
         left: 0;
@@ -27,7 +27,7 @@
 
 @media (min-width: 800px) {
     .banner {
-        h1 {
+        h2 {
             line-height: 6rem;
             font-size: 3rem;
             top: 0%;
