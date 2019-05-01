@@ -27,6 +27,48 @@
   margin: 0 auto;
 }
 
+/* Cookie warning */
+#cookie-warn {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: 0;
+  background: #D66E1A;
+  opacity: .9;
+  margin: 0 auto;
+  padding: 15px;
+  width: 100vw;
+  max-width: 1100px;
+  display: none;
+  z-index: 99;
+}
+
+#cookie-warn a {
+  display: block;
+  color: black;
+  text-transform: uppercase;
+  padding-top: 10px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#cookie-warn p {
+  font-size: 14px;
+  color: black;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding: 0 15px 0;
+}
+
+#cookie-warn p strong {
+  color: black;
+  font-size: 20px;
+}
+
 header {
   position: relative;
   height: 100vh;
